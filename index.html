@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup box</title>
+<!--css link-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="btn-1">
+            show popup
+        </button>
+    </div>
+
+    <div class="cookie-box">
+        <span class="btn-2">&times;</span>
+        <img src="image/cookie.png" alt=""> 
+        <h3>cookies and privacy</h3>
+        <p>this website uses cookies th ensure you get the best experience
+            on our website
+        </p>
+        <a href="#" class="accept">accept all cookies</a>
+        <a href="#" class="settings">customize settings</a>
+    </div>
+
+<!--javaScript-->
+    <script>
+        document.querySelector('.btn-1').onclick = () =>{
+            document.querySelector('.cookie-box').classList.add('active');
+        }
+
+        document.querySelector('.btn-2').onclick = () =>{
+            document.querySelector('.cookie-box').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
